@@ -1,0 +1,101 @@
+#menu {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width:100%;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #141313;
+    border-bottom: 4px solid #198f1c;
+    font-size: 15px; 
+}
+
+#menu ul, #menu li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+#menu ul {
+    position: relative;
+    text-transform: uppercase;
+}
+
+#menu ul li {
+    float: left;
+    vertical-align: middle;
+}
+
+#menu ul li.hover,
+#menu ul li:hover {
+    position: relative;
+    cursor: default;
+}
+
+#menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%; left: 0;
+    width: 100%;
+    border-top: 4px solid #198f1c;
+    min-width: 200px; 
+    text-transform: none;
+}
+
+#menu ul ul li {
+    float: none;
+    position: relative;
+}
+
+#menu ul ul ul {
+    top: 0;
+    left: 99%;
+}
+
+#menu ul li:hover > ul {
+    visibility: visible;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    background: #141313;
+    color: #CBCBCB;
+    padding: 0 20px;
+}
+
+#menu > ul {
+    display: inline-block;
+}
+
+#menu ul ul a {
+    background: #198f1c;
+    color: #FFF;
+    border: 1px solid #034405;
+    line-height: 150%;
+    padding: 16px 20px; 
+}
+
+#menu > ul > li > a {
+    line-height: 50px;
+}
+
+#menu ul ul li:hover > a {
+    background: #5bcd2c;
+}
+
+#menu ul li:hover > a, #menu ul li.active > a {
+    background: #198f1c;
+    color: #FFF;
+}
+
+#menu ul li.menu-item > a:after {
+    content: '+';
+    margin-left: 6px;
+}
+
+#menu ul ul li.menu-item > a:after {
+    content: '+';
+    position: absolute;
+    top: 17px;
+    right: 15px;
+}
